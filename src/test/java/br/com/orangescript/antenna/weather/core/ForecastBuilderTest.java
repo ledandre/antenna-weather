@@ -21,4 +21,17 @@ public class ForecastBuilderTest {
         assertEquals("Qua, 31/12", forecast.getDate());
         assertEquals("http://img0.cptec.inpe.br/~rgrafico/icones_principais/tempo/maior/ppt.gif", forecast.getWeatherImage());
     }
+
+    @Test
+    public void parseWithoutImageTest() {
+        Item rssItem = new Item();
+        rssItem.setDescription("Qua, 31/12 - Min: 20ºC Máx: 31ºC Previsão para os próximos dias:");
+
+        Forecast forecast = ForecastBuilder.build(rssItem);
+
+        assertTrue(forecast.getMinimum() == 20);
+        assertTrue(forecast.getMaximum() == 31);
+        assertEquals("Qua, 31/12", forecast.getDate());
+        assertEquals(null, forecast.getWeatherImage());
+    }
 }
