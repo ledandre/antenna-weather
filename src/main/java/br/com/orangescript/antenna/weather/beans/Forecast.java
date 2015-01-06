@@ -3,7 +3,7 @@ package br.com.orangescript.antenna.weather.beans;
 public class Forecast {
     private String date;
     private String weatherImage;
-    private String description;
+    private String weatherCondition;
     private String source;
 
     private int minimum;
@@ -25,12 +25,12 @@ public class Forecast {
         this.weatherImage = weatherImage;
     }
 
-    public String getDescription() {
-        return description;
+    public String getWeatherCondition() {
+        return weatherCondition;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setWeatherCondition(String weatherCondition) {
+        this.weatherCondition = weatherCondition;
     }
 
     public int getMinimum() {
