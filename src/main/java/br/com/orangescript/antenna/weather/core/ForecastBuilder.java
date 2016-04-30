@@ -16,7 +16,7 @@ public class ForecastBuilder {
     private static final Logger LOGGER = LoggerFactory.getLogger(ForecastBuilder.class);
 
     private static final Pattern DEGREE_PATTERN = Pattern.compile("[0-9]{1,2}[º](C)");
-    private static final Pattern DATE_PATTERN = Pattern.compile("([a-zA-Zá]){3}(,)\\s([0-9]){1,2}/([0-9]){1,2}");
+    private static final Pattern DATE_PATTERN = Pattern.compile("([a-zA-Zà-ú]){3}(,)\\s([0-9]){1,2}/([0-9]){1,2}");
     private static final Pattern IMAGE_LINK_PATTERN = Pattern.compile("(http://)(.)+(.gif|.jpeg|.jpg|.png)");
 
     private static final String WEATHER_CONDITION_LABEL = "Condição: ";

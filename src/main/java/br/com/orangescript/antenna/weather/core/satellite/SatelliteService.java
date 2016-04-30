@@ -44,7 +44,7 @@ public class SatelliteService implements Satellite {
         try {
             Channel rssChannel = (Channel) rssDigester.parse(weatherForecastXML);
             return ForecastBuilder.build(rssChannel);
-        } catch (IOException | SAXException e) {
+        } catch (Exception e) {
             LOGGER.error(e.getLocalizedMessage(), e);
         }
 

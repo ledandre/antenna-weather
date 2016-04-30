@@ -2,8 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.orangescript</groupId>
     <artifactId>antenna-weather</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 
+	<properties>
+		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+	</properties>
     <developers>
         <developer>
             <name>Leandro Tomaz André</name>
@@ -36,8 +39,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
         </plugins>
